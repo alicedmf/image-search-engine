@@ -8,14 +8,14 @@ function ResultsDisplay(pics) {
     if (pics.length == 0) {
         imageListContent = (
             <div>
-                <h2>Aucun resultat</h2>
+                <h2 className="font-bold center">Aucun resultat</h2>
             </div>
         )
     } else {
         imageListContent = (
-                <ImageList cols={4}>
+                <ImageList cols={3}>
                     {pics.map(img => (
-                        <ImageListItem> key={img.id}
+                        <ImageListItem class="w-full aspect-square "> key={img.id}
                             <img src={img.largeImageURL} alt="" />
                         </ImageListItem>
 

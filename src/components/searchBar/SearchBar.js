@@ -18,14 +18,15 @@ function SearchBar() {
         }
     };
     return (
-        <div>
+        <div class="object-center">
             <form className="form" onSubmit={searchImages}>
                 <div style={{ padding: '50px' }}>
-                    <input type="text" name="searchText"
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        type="text" name="searchText"
                         className="input"
                         value={query}
                         onChange={(e) => setQuery(e.target.value)} />
-                    <button type="submit" > Search </button>
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="submit" > Search </button>
                 </div>
             </form>
             {ResultsDisplay(pics)}

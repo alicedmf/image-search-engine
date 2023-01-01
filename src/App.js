@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <h1 className="title">React Photo Search</h1>
+        <h1 className="title" class="text-2xl font-extrabold ">Photo Search Engine</h1>
         <SearchBar />
         
       </div>
