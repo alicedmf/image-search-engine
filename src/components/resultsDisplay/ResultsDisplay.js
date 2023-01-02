@@ -7,13 +7,14 @@ function ResultsDisplay(pics) {
 
     if (pics.length == 0) {
         imageListContent = (
-            <div>
+            <div pt-8 pb-8>
                 <h2 className="font-bold center">Aucun resultat</h2>
             </div>
         )
     } else {
         imageListContent = (
-                <ImageList cols={3}>
+            <div pt-8 pb-8>
+                <ImageList cols={3} >
                     {pics.map(img => (
                         <ImageListItem class="w-full aspect-square "> key={img.id}
                             <img src={img.largeImageURL} alt="" />
@@ -21,6 +22,7 @@ function ResultsDisplay(pics) {
 
                     ))}
                 </ImageList>
+            </div>
         )
     }
     return imageListContent;
