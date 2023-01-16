@@ -18,15 +18,15 @@ function SearchBar() {
         }
     };
     return (
-        <div class="content-center p-8">
+        <div class="class= mx-auto text-center mt-4">
             <form className="form" onSubmit={searchImages}>
                 <div class="">
-                    <input class="bg-gray-200 border-1 border-black-600 p-3 "
+                    <input class="form-input h-12 bg-white border-black border placeholder-gray-500 rounded-md focus:outline-none focus:shadow-outline-blue focus:border-black sm:text-sm sm:leading-5 "
                         type="text" name="searchText"
                         className="input"
                         value={query}
                         onChange={(e) => setQuery(e.target.value)} />
-                    <button class="bg-orange-500 hover:bg-orange-700 text-white rounded p-3 " type="submit" > Search </button>
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white rounded p-3 h-12 " type="submit" > Search </button>
                 </div>
             </form>
             {ResultsDisplay(pics)}

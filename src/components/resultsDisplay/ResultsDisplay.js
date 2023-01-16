@@ -7,13 +7,13 @@ function ResultsDisplay(pics) {
 
     if (pics.length == 0) {
         imageListContent = (
-            <div pt-8 pb-8>
+            <div class="mx-auto text-center mt-4">
                 <h2 className="font-bold center">Aucun resultat</h2>
             </div>
         )
     } else {
         imageListContent = (
-            <div pt-8 pb-8>
+            <div class="mx-auto text-center mt-4">
                 <ImageList cols={3} >
                     {pics.map(img => (
                         <ImageListItem class="w-full aspect-square "> key={img.id}

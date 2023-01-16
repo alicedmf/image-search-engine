@@ -1,7 +1,5 @@
 import React from 'react';
-import './App.css';
 import SearchBar from './components/searchBar/SearchBar';
-import ResultsDisplay from './components/resultsDisplay/ResultsDisplay';
 
 
 
